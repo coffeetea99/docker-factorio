@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  factorio:
+    build: .
+    restart: always
+    ports:
+      - "34197:34197"
+    volumes:
+      - ./data/saves:/opt/factorio/saves
